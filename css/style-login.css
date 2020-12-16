@@ -31,6 +31,11 @@ body {
     margin-bottom: 30px;
 }
 
+#main .error {
+    color: red;
+    font-size: 1.2em;
+}
+
 #main label {
     color: black;
     font-size: 1.5em;
@@ -52,7 +57,7 @@ body {
     border-bottom: 2px solid #B76301;
 }
 
-#main button {
+#main #signin {
     border: none;
     border-radius: 5px;
     padding: .45em 2.5em;
@@ -62,9 +67,10 @@ body {
     color: white; 
     margin-top: 1em;
     border: .1em solid #007DA5;
+    display: inline-flex;
 }
 
-#main button:hover {
+#main #signin:hover {
     background: white;
     color: #007DA5; 
 }
