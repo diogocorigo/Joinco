@@ -21,19 +21,24 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 60px;
     justify-content: left;
-    max-width: 512px;
     border-radius: 5px;
+    max-width: 30em;
 }
 
 #main .logo {
     margin-bottom: 30px;
 }
 
-#main .error {
+#main #errorName,
+#main #errorCompatible {
     color: red;
     font-size: 1.2em;
+    width: 100%;
+}
+
+#main .error {
+    display: none;
 }
 
 #main label {
@@ -68,6 +73,7 @@ body {
     margin-top: 1em;
     border: .1em solid #007DA5;
     display: inline-flex;
+    cursor: pointer;
 }
 
 #main #signin:hover {

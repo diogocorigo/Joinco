@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+/* body {
+    background: rgb(26, 26, 26);
+    color: white;
+} */
+
+/* NAV */
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5em;
+    height: 9.5em;
+}
+
+.profileSection {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30em;
+}
+
+.iconType,
+.typeUser {
+    cursor: pointer;
+    color: #007DA5;
+}
+
+.typeUser {
+    color: #007DA5;
+    font-size: 1.3em;
+    margin-left: .5em;
+    font-weight: normal;
+}
+
+.typeUser:hover {
+    color: #B76301;
+    font-weight: bold;
+}
+
+.active {
+    color: #007DA5;
+    border-bottom: 1px solid #B76301;
+    font-weight: bold;
+}
+
+#logOut {
+    font-size: 1.3em;
+    color: #007DA5;
+    cursor: pointer;
+    padding: .2em .4em;
+}
+
+#logOut:hover {
+    color: #B76301;
+}
+
+/* MAIN */
+
+.main {
+    width: 100%;
+    height: calc(100vh - 9.5em);
+}
+
+.hidden {
+    display: none;
+}
+
+#defaultScreen {
+    width: 100%;
+    height: 100%;
+}
+
+.creationSection {
+    align-items: center;
+    padding: .3em 1em;
+
+}
+
+#search {
+    font-size: 1.2em;
+    padding: .3em 1em;
+    border: 1px solid #B76301;
+    color: black;
+    width: 35em;
+}
+
+.btnDefault {
+    font-size: 1.2em;
+    padding: .3em 1em;
+    border: 1px solid #007DA5;
+    background-color: #007DA5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: .5em;
+}
+
+.btnDefault_ {
+    border: 1px solid #B76301;
+    background-color: #B76301;
+}
+
+.btnDefault:hover {
+    border: 1px solid #007DA5;
+    background-color: white;
+    color: #007DA5;
+}
+
+.btnDefault_:hover {
+    border: 1px solid #B76301;
+    background-color: white;
+    color: #B76301;
+}
+
+#tb_suppliers {
+    padding: 1em 1em;
+    width: 100%;
+    height: 100%;
+}
+
+tr {
+    border: 1px solid #007DA5;
+    width: 100%;
+    padding: .3em .6em;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+td {
+    margin-left: 1em;
+    border-right: 1px solid #B76301;
+}
+
+td:last-child {
+    border-right: none;
+}
