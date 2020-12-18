@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,10 @@
     background: rgb(26, 26, 26);
     color: white;
 } */
+
+.hidden {
+    display: none;
+}
 
 /* NAV */
 
@@ -66,15 +72,11 @@
     color: #B76301;
 }
 
-/* MAIN */
+/* DEFAULT */
 
 .main {
     width: 100%;
     height: calc(100vh - 9.5em);
-}
-
-.hidden {
-    display: none;
 }
 
 #defaultScreen {
@@ -83,15 +85,18 @@
 }
 
 .creationSection {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     padding: .3em 1em;
-
 }
 
 #search {
     font-size: 1.2em;
     padding: .3em 1em;
     border: 1px solid #B76301;
+    border-radius: 5px;
     color: black;
     width: 35em;
 }
@@ -124,6 +129,22 @@
     color: #B76301;
 }
 
+.last i {
+    font-size: 1.3em;
+    color: #007DA5;
+    margin-left: .4em;
+}
+
+.last select {
+    font-size: 1.2em;
+    padding: .3em .3em;
+    border: 1px solid #B76301;
+    color: black;
+    width: 3em;
+    margin-left: .5em;
+    border-radius: 5px;
+}
+
 #tb_suppliers {
     padding: 1em 1em;
     width: 100%;
@@ -145,4 +166,46 @@ td {
 
 td:last-child {
     border-right: none;
+}
+
+/* ADMIN */
+
+#adminScreen {
+    width: 100%;
+    height: calc(100vh - 9.5em);
+}
+
+.adminOptions {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addUsers,
+#validCategories {
+    height: 100%;
+    width: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#addUsers {
+    background: #007DA5;
+}
+
+#validCategories {
+    background: #B76301;
+}
+
+#addUsers h2,
+#validCategories h2 {
+    font-size: 10em;
+}
+
+#addUsers p,
+#validCategories p {
+    font-size: 1.5em;
 }

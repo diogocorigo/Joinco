@@ -1,3 +1,7 @@
+<?php
+include('includes/_server.php')
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -28,7 +32,7 @@
             <input type="email" id="inputEmail" placeholder="Email/Username" required autofocus>
             <label for="inputPassword">Password</label>
             <input type="password" id="inputPassword" placeholder="Password" required>
-            <button id="signin" onclick="checkUser()">Sign in</button>
+            <button id="signin" onclick=checkUser()>Sign in</button>
         </main>
 
     </div>
