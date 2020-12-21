@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: left;
+    border-radius: 5px;
+    max-width: 30em;
+}
+
+#main .logo {
+    margin-bottom: 30px;
+}
+
+#main #errorName,
+#main #errorCompatible {
+    color: red;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+#main .error {
+    display: none;
+}
+
+#main label {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+#main input {
+    width: 100%;
+    height: 3em;
+    margin: .6em 0 .8em 0;
+    padding: 0 .8em;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid #B76301;
+}
+
+#main input:hover { 
+    border-bottom: 2px solid #B76301;
+}
+
+#main #signin {
+    border: none;
+    border-radius: 5px;
+    padding: .45em 2.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: #007DA5;
+    color: white; 
+    margin-top: 1em;
+    border: .1em solid #007DA5;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+#main #signin:hover {
+    background: white;
+    color: #007DA5; 
+}
+
+

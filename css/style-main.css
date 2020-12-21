@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+/* NAV */
+
+.navRow {
+  padding: 0.5em 2em;
+}
+
+.profileSection {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.iconType,
+.typeUser {
+  cursor: pointer;
+  color: #007da5;
+}
+
+.typeUser {
+  color: #007da5;
+  font-size: 1.3em;
+  margin-left: 0.5em;
+  font-weight: normal;
+}
+
+.typeUser:hover {
+  color: #b76301;
+  font-weight: bold;
+}
+
+#logOut {
+  float: right;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 98%;
+  }
+}
+
+/* DEFAULT */
+
+#defaultScreen {
+  width: 100%;
+  height: 100%;
+}
+
+.btnDefault {
+  font-size: 1.2em;
+  padding: 0.3em 1em;
+  border: 1px solid #007da5;
+  background-color: #007da5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+
+.btnDefault_ {
+  border: 1px solid #b76301;
+  background-color: #b76301;
+}
+
+.btnDefault:hover {
+  border: 1px solid #007da5;
+  background-color: white;
+  color: #007da5;
+}
+
+.btnDefault_:hover {
+  border: 1px solid #b76301;
+  background-color: white;
+  color: #b76301;
+}
+
+.customButtons {
+  position: absolute;
+  margin-top: -3em;
+}
+
+#tb_suppliers,
+#tb_defaults,
+#tb_validate_supplier,
+#tb_admin {
+  padding: 1em 1em;
+  max-width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#tb_suppliers_wrapper .sorting,
+#tb_suppliers_wrapper .sorting_asc,
+#tb_suppliers_wrapper .sorting_desc,
+#tb_defaults .sorting,
+#tb_defaults .sorting_asc,
+#tb_defaults .sorting_desc,
+#tb_validate_supplier .sorting,
+#tb_validate_supplier .sorting_asc,
+#tb_validate_supplier .sorting_desc,
+#tb_admin .sorting,
+#tb_admin .sorting_asc,
+#tb_admin .sorting_desc {
+  border-bottom: none;
+}
+
+#tb_suppliers_filter,
+#tb_defaults_filter,
+#tb_validate_supplier_filter,
+#tb_admin_filter {
+  float: left;
+  margin-left: 1em;
+}
+
+#tb_suppliers_filter label input,
+#tb_defaults_filter label input,
+#tb_validate_supplier_filter label input,
+#tb_admin_filter label input {
+  font-size: 1.2em;
+  padding: 0.3em 1em;
+  border: none;
+  border-bottom: 2px solid #b76301;
+  color: black;
+  width: 35em;
+}
+
+#tb_suppliers_length,
+#tb_defaults_length,
+#tb_validate_supplier_length,
+#tb_admin_length {
+  float: right;
+}
+
+th,
+td {
+  border: 1px solid #007da5;
+}
+
+/* ADMIN */
+
+#adminScreen {
+  width: 100%;
+  height: calc(100vh - 9.5em);
+}
+
+#addUsers,
+#validCategories {
+  height: 100%;
+  width: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addUsers {
+  background: #007da5;
+}
+
+#validCategories {
+  background: #b76301;
+}
+
+#addUsers h2,
+#validCategories h2 {
+  font-size: 10em;
+}
+
+#addUsers p,
+#validCategories p {
+  font-size: 1.5em;
+}
+
+.spacer {
+  height: 1.5em;
+}
+
+/* GLOBAL */
+
+.hidden {
+  display: none;
+}
+
+.active {
+  color: #007da5;
+  border-bottom: 2px solid #b76301;
+  font-weight: bold;
+}
