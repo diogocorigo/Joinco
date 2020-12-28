@@ -12,15 +12,15 @@
         mkdir('../imgRepository/');
     }
 
-$path = '../imgRepository/';
-if (move_uploaded_file($tmp_img, $path . $img)) { 
-    $timeId=date("his");
-    $extra="img";
-    rename ("$path.$img", "$path.$supplierName.$timeId.$extra");
-    mysqli_query($db,"insert into images(codImg,url,codSup) values(null,'".$supplierName.$timeId.$extra."','".$codSup."'");    
-}  else {
-    echo mysqli_error($db);
-    echo "Erro";
-}
+    $path = '../imgRepository/';
+    if (move_uploaded_file($tmp_img, $path . $img)) { 
+        $timeId=date("his");
+        $extra="img";
+        rename ("$path.$img", "$path.$supplierName.$timeId.$extra");
+        mysqli_query($db,"insert into images(codImg,url,codSup) values(null,'".$supplierName.$timeId.$extra."','".$codSup."'");    
+    }  else {
+        echo mysqli_error($db);
+        echo "Erro";
+    }
 
 ?>
