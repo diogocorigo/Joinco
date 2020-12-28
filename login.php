@@ -21,7 +21,7 @@ session_destroy();
     />
     <link rel="icon" href="img/joinco_icon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="opacity">
